@@ -2,6 +2,19 @@
     background: #181818 !important;
 }
 
+#sidebar {
+    background: #181818 !important;
+}
+
+#sidebar #selected {
+    background: #323232 !important;
+}
+
+#profile {
+    width: 200px;
+    height: 200px;
+}
+
 body {
     background: #1f1f1f;
 }
