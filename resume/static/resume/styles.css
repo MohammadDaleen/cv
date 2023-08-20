@@ -18,3 +18,27 @@
 body {
     background: #1f1f1f;
 }
+
+/* Style code part */
+ol { 
+    counter-reset: item;
+    list-style-type: none;
+}
+li { display: block; }
+li:before { 
+    content: counter(item) "  "; 
+    counter-increment: item;
+    color: #6e7681; 
+}
+
+.variable {
+    color: #9cdcfe;
+}
+
+.sign {
+    color: #d4d4d4;
+}
+
+.string {
+    color: #ce9178;
+}

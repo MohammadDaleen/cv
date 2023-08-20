@@ -5,41 +5,53 @@
 {% block body %}
     <div class="row d-flex align-content-stretch text-white">
         <div id="sidebar" class="col-3 sidebar p-0">
-            <div id="selected" class="border border-info d-flex justify-content-center py-3">
+            <div class="d-flex justify-content-center py-3">
                 <img id="profile" src="{% static 'resume/profile.png' %}" class="rounded-circle" alt="Profile Picture">
             </div>
-            <div>
+            <div id="selected" class="border border-info">
                 <p class="m-1">
                     <i class="fa-solid fa-chevron-down" style="color: #ffffff;"></i>
                     CONTACT
                 </p>
             </div>
             <div>
-                <p class="m-1">
+                <p class="m-1 ms-4">
                     <i class="fa-regular fa-envelope" style="color: #e94234;"></i>
                     mohammaddalien2003@gmail.com
                 </p>
             </div>
             <div>
-                <p class="m-1">
+                <p class="m-1 ms-4">
                     <i class="fa-solid fa-mobile-screen"></i>
                     +966534785904
                 </p>
             </div>
             <div>
-                <p class="m-1">
-                    <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
+                <p class="m-1 ms-4">
+                    <i class="fa-solid fa-location-dot" style="color: #ff0000;"></i>
                     Riyadh, Saudi Arabia
                 </p>
             </div>
             <div>
-                <p class="m-1">
-                    <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
+                <p class="m-1 ms-4">
+                    <i class="fa-brands fa-linkedin-in" style="color: #519aba;"></i>
                     linkedin.com/in/mohammad-daleen-b43799285
                 </p>
             </div>
         </div>
         <div id="main" class="col-9">
+            <ol>
+                <li class="d-flex">
+                    <div class="ms-4">
+                        <span class="variable">name</span> <span class="sign">=</span> <span class="string">"Mohammad Daleen"</span>
+                    </div>
+                </li>
+                <li class="d-flex">
+                    <div class="ms-4">
+                        <span class="variable">profession</span> <span class="sign">=</span> <span class="string">"Web Developer"</span>
+                    </div>
+                </li>
+            </ol>
         </div>
     </div>
 {% endblock %}
