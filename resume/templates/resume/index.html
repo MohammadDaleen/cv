@@ -5,8 +5,16 @@
 {% block body %}
     <div class="row d-flex align-content-stretch text-white">
         <div id="sidebar" class="col-3 sidebar p-0">
-            <div class="d-flex justify-content-center py-3">
+            <div class='d-flex align-items-center p-2 border-dark border-bottom'>
+                EXPLORER
+            </div>
+            <div class="d-flex justify-content-evenly align-items-center py-3">
                 <img id="profile" src="{% static 'resume/profile.png' %}" class="rounded-circle" alt="Profile Picture">
+                <h3 style="font-family: Georgia;">
+                    <div>MOHAMMAD</div>
+                    <div>ABDOU</div>
+                    <div>DALEEN</div>
+                </h3>
             </div>
             <div id="selected" class="border border-info">
                 <p class="m-1">
@@ -39,17 +47,40 @@
                 </p>
             </div>
         </div>
-        <div id="main" class="col-9">
+        <div id="main" class="col-9 p-0">
+            <div class='d-flex align-items-center border-dark border-bottom'>
+                <div class="d-flex align-items-center justify-content-center border-primary border-top p-2">
+                    <div class="d-flex justify-content-start align-items-center">                        
+                        <i class="fa-solid fa-angle-left" style="color: #e37932;"></i>
+                        <i class="fa-solid fa-angle-right" style="color: #e37932;"></i>
+                    </div>
+                    <div class="mx-2">
+                        professional_profile.html
+                    </div>
+                    <i class="fa-solid fa-xmark" style="color: #ffffff;"></i>
+                </div>
+            </div>
             <ol>
                 <li class="d-flex">
                     <div class="ms-4">
-                        <span class="variable">name</span> <span class="sign">=</span> <span class="string">"Mohammad Daleen"</span>
+                        <span class="sub-sign"><</span><span class="tag">ul</span> <span class="attr">id</span><span class="sign">=</span><span class="string">"professional_profile"</span><span class="sub-sign">></span>
                     </div>
                 </li>
                 <li class="d-flex">
                     <div class="ms-4">
-                        <span class="variable">profession</span> <span class="sign">=</span> <span class="string">"Web Developer"</span>
+                        <span class="sub-sign"><</span><span class="tag">li</span><span class="sub-sign">></span>
                     </div>
+                </li>
+                <li class="d-flex">
+                    <div class="ms-4">
+                            Full stack developer working with a lot of languages and frameworks
+                    </div>
+                </li>
+
+                    such as: Python, HTML, CSS, JavaScript, Django, React.JS, Git, Flask,
+                </li>
+                <li>
+                    6 months of 
                 </li>
             </ol>
         </div>

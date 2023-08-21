@@ -1,3 +1,7 @@
+body {
+    font-family: Consolas, 'Courier New', monospace;
+}
+
 #navbar {
     background: #181818 !important;
 }
@@ -11,8 +15,8 @@
 }
 
 #profile {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
 }
 
 body {
@@ -31,6 +35,7 @@ li:before {
     color: #6e7681; 
 }
 
+/* Python Colors */
 .variable {
     color: #9cdcfe;
 }
@@ -41,4 +46,17 @@ li:before {
 
 .string {
     color: #ce9178;
+}
+
+/* HTML Colors */
+.tag {
+    color: #569cd6;
+}
+
+.attr {
+    color: #9cdcfe;
+}
+
+.sub-sign {
+    color: #80807a;
 }
