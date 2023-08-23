@@ -3,15 +3,15 @@ body {
 }
 
 #navbar {
-    background: #181818 !important;
+    background: #181818;
 }
 
 #sidebar {
-    background: #181818 !important;
+    background: #181818;
 }
 
 #sidebar #selected {
-    background: #323232 !important;
+    background: #323232;
 }
 
 #profile {
@@ -21,6 +21,11 @@ body {
 
 body {
     background: #1f1f1f;
+}
+
+/* change cursor form when hovering on tabs text */
+#professional-profile, #projects {
+    cursor: pointer;
 }
 
 /* Style code part */
@@ -59,25 +64,4 @@ li:before {
 
 .sub-sign {
     color: #80807a;
-}
-
-/* Tabs for code */
-.tab-1 {
-    margin-left: 1rem;
-}
-
-.tab-2 {
-    margin-left: 2rem;
-}
-
-.tab-3 {
-    margin-left: 3rem;
-}
-
-.tab-4 {
-    margin-left: 4rem;
-}
-
-.tab-5 {
-    margin-left: 5rem;
 }
