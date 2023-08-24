@@ -24,7 +24,7 @@ body {
 }
 
 /* change cursor form when hovering on tabs text */
-#professional-profile, #projects, #linguistic-skills, #certificates-and-hobbies {
+#html, #css, #py, #js {
     cursor: pointer;
 }
 
@@ -64,4 +64,9 @@ li:before {
 
 .sub-sign {
     color: #80807a;
+}
+
+/* CSS Colors */
+.selector {
+    color: #d7ba7d;
 }

@@ -6,11 +6,11 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // Load default code
-  load_tab(`${tabsIDs[0]}`);
+  load_tab(`${tabsIDs[1]}`);
 });
 
 // Tabs
-tabsIDs = ["professional-profile", "projects", "linguistic-skills", 'certificates-and-hobbies']
+tabsIDs = ["html", "css", "py", 'js']
 
 /* Mailbox: When a user visits their Inbox, Sent mailbox, or Archive, load the appropriate mailbox. */
 function load_tab(tab) {
