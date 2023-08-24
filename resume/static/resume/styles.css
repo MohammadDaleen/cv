@@ -24,7 +24,7 @@ body {
 }
 
 /* change cursor form when hovering on tabs text */
-#professional-profile, #projects {
+#professional-profile, #projects, #linguistic-skills, #certificates-and-hobbies {
     cursor: pointer;
 }
 

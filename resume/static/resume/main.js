@@ -1,12 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
+  
+  // Use tabs to toggle between codes
+  for (let i = 0; i < tabsIDs.length; i++){
+    document.querySelector(`#${tabsIDs[i]}`).addEventListener('click', () => load_tab(`${tabsIDs[i]}`));
+  }
 
-  // Use buttons to toggle between views
-  document.querySelector('#professional-profile').addEventListener('click', () => load_tab('professional-profile'));
-  document.querySelector('#projects').addEventListener('click', () => load_tab('projects'));
+  // Load default code
+  load_tab(`${tabsIDs[0]}`);
 });
 
 // Tabs
-tabsIDs = ["professional-profile", "projects"]
+tabsIDs = ["professional-profile", "projects", "linguistic-skills", 'certificates-and-hobbies']
 
 /* Mailbox: When a user visits their Inbox, Sent mailbox, or Archive, load the appropriate mailbox. */
 function load_tab(tab) {
@@ -19,9 +23,10 @@ function load_tab(tab) {
   // Set current tab background to selected color
   const currentTab = document.querySelector(`#${tab}`);
   currentTab.style.background = '#1f1f1f';
-  currentTab.classList.add("border-primary");
+  currentTab.classList.remove("border-dark");
+  currentTab.classList.remove("border");
   currentTab.classList.add("border-top");
-
+  currentTab.classList.add("border-primary");
 }
 
 // Set tabs to default
@@ -35,5 +40,7 @@ function setTabsToDefault(){
     tab.style.background = '#181818';
     tab.classList.remove("border-primary");
     tab.classList.remove("border-top");
+    tab.classList.add('border-dark');
+    tab.classList.add('border');
   }
 }
