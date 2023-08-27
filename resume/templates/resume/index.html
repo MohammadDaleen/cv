@@ -93,16 +93,16 @@
                 <li><span class="ms-4 sub-sign">&lt;</span><span class="tag">ul</span>&nbsp;<span class="attr">id</span><span class="sign">=</span><span class="string">"professional_profile"</span><span class="sub-sign">&gt;</span></li>
 
                 <li><span class="sub-sign ms-4">{% for i in "iiii" %}&nbsp;{% endfor %}&lt;</span><span class="tag">li</span><span class="sub-sign">&gt;</span></li>
-                <li><span class="ms-4">{% for i in "iiiiiiii" %}&nbsp;{% endfor %}Full stack developer working with a lot of languages, frameworks, and technologies</span></li>
-                <li><span class="ms-4">{% for i in "iiiiiiii" %}&nbsp;{% endfor %}such as: Python, HTML, CSS, JavaScript, SQL, C, Django, React.JS, Git, Flask, Jinja, Bootstrap, Sass, Docker</span></li>
+                <li><span class="innerHTML ms-4">{% for i in "iiiiiiii" %}&nbsp;{% endfor %}Full stack developer working with a lot of languages, frameworks, and technologies</span></li>
+                <li><span class="innerHTML ms-4">{% for i in "iiiiiiii" %}&nbsp;{% endfor %}such as: Python, HTML, CSS, JavaScript, SQL, C, Django, React.JS, Git, Flask, Jinja, Bootstrap, Sass, Docker</span></li>
                 <li><span class="sub-sign ms-4">{% for i in "iiii" %}&nbsp;{% endfor %}&lt;/</span><span class="tag">li</span><span class="sub-sign">&gt;</span></li>
 
                 <li><span class="sub-sign ms-4">{% for i in "iiii" %}&nbsp;{% endfor %}&lt;</span><span class="tag">li</span><span class="sub-sign">&gt;</span></li>
-                <li><span class="ms-4">{% for i in "iiiiiiii" %}&nbsp;{% endfor %}1 year of Python and JavaScript experience (9 months of Flask/Jinja +3 months of Django/React.JS)</span></li>
+                <li><span class="innerHTML ms-4">{% for i in "iiiiiiii" %}&nbsp;{% endfor %}1 year of Python and JavaScript experience (9 months of Flask/Jinja +3 months of Django/React.JS)</span></li>
                 <li><span class="sub-sign ms-4">{% for i in "iiii" %}&nbsp;{% endfor %}&lt;/</span><span class="tag">li</span><span class="sub-sign">&gt;</span></li>
                 
                 <li><span class="sub-sign ms-4">{% for i in "iiii" %}&nbsp;{% endfor %}&lt;</span><span class="tag">li</span><span class="sub-sign">&gt;</span></li>
-                <li class="d-flex"><span class="ms-4">{% for i in "iiiiiiii" %}&nbsp;{% endfor %}<span class="sub-sign">&lt;</span><span class="tag">a</span><span class="attr">&nbsp;href</span><span class="sign">=</span><span class="string">"</span><a href="https://certificates.cs50.io/2b7e2e2f-398a-4945-9944-f7ee59d0bc77.pdf" target="_blank" rel="noopener noreferrer">Link of Certificate</a><span class="string">"</span><span class="sub-sign">&gt;</span>Harvard Certified Professional in CS50x<span class="sub-sign">&lt;/</span><span class="tag">a</span><span class="sub-sign">&gt;</span></span></li>
+                <li class="d-flex"><span class="innerHTML ms-4">{% for i in "iiiiiiii" %}&nbsp;{% endfor %}<span class="sub-sign">&lt;</span><span class="tag">a</span><span class="attr">&nbsp;href</span><span class="sign">=</span><span class="string">"</span><a href="https://certificates.cs50.io/2b7e2e2f-398a-4945-9944-f7ee59d0bc77.pdf" target="_blank" rel="noopener noreferrer">Link of Certificate</a><span class="string">"</span><span class="sub-sign">&gt;</span>Harvard Certified Professional in CS50x<span class="sub-sign">&lt;/</span><span class="tag">a</span><span class="sub-sign">&gt;</span></span></li>
                 <li class="d-flex"><span class="sub-sign ms-4">{% for i in "iiii" %}&nbsp;{% endfor %}&lt;/</span><span class="tag">li</span><span class="sub-sign">&gt;</span></li>
                 
                 <li class="d-flex"><span class="ms-4 sub-sign">&lt;/</span><span class="tag">ul</span><span class="sub-sign">&gt;</span></li>
@@ -112,10 +112,19 @@
                 <li><span class="ms-4 selector">#education&nbsp;&lcub;</span>
 
                 <li><span class="ms-4 attr">{% for i in "iiii" %}&nbsp;{% endfor %}high-school</span>:<span class="string">&nbsp;Passed General Secondary Exams Scientific with 99.78%</span>;
-                <li><span class="ms-4 attr">{% for i in "iiii" %}&nbsp;{% endfor %}university</span>:<span class="string">&nbsp;Bachelor's degree in <b><i>Computer Science</i></b> with 3.93 GPA</span>
-                <li><span class="ms-4 string">{% for i in "iiiiuniversity: " %}&nbsp;{% endfor %}from Faculy of Computer Studies FCS(Arab Open University(AOU)) in 2025 in Saudi Arabia</span>;
+                <li><span class="ms-4 attr">{% for i in "iiii" %}&nbsp;{% endfor %}university</span>:<span class="string">&nbsp;Bachelor's degree in <b><i>Computer Science</i></b> with 3.93 GPA from Faculy of </span>
+                <li><span class="ms-4 string">{% for i in "iiii" %}&nbsp;{% endfor %}Computer Studies FCS(Arab Open University(AOU)) in 2025 in Saudi Arabia</span>;
                 
                 <li><span class="ms-4 selector">&lcub;</span>
+
+
+                <li><span class="ms-4 selector">#certificates&nbsp;&lcub;</span>
+
+                <li><span class="ms-4 attr">{% for i in "iiii" %}&nbsp;{% endfor %}cs50x</span>:<span class="string">&nbsp;Harvard Certified Professional in CS50x</span>;
+                <li><span class="ms-4 attr">{% for i in "iiii" %}&nbsp;{% endfor %}hour-of-code-2020</span>:<span class="string">&nbsp;Microsoft Certificate of Completion of the Hour of Code 2020</span>
+                <li><span class="ms-4 string">{% for i in "iiii" %}&nbsp;{% endfor %}and for demonstrating creativity and problem solving skills</span>;
+
+                <li class="d-flex"><span class="ms-4 selector">&lcub;</span>
             </ol>
 
             
@@ -140,22 +149,21 @@
 
 
             <ol id="js-code" style="display: none;">
-                <li><span class="ms-4 sub-sign">&lt;</span><span class="tag">ul</span>&nbsp;<span class="attr">id</span><span class="sign">=</span><span class="string">"baz"</span><span class="sub-sign">&gt;</span></li>
-
-                <li><span class="sub-sign ms-4">{% for i in "iiii" %}&nbsp;{% endfor %}&lt;</span><span class="tag">li</span><span class="sub-sign">&gt;</span></li>
-                <li><span class="ms-4">{% for i in "iiiiiiii" %}&nbsp;{% endfor %}Full stack developer working with a lot of languages, frameworks, and technologies</span></li>
-                <li><span class="ms-4">{% for i in "iiiiiiii" %}&nbsp;{% endfor %}such as: Python, HTML, CSS, JavaScript, SQL, C, Django, React.JS, Git, Flask, Jinja, Bootstrap, Sass, Docker</span></li>
-                <li><span class="sub-sign ms-4">{% for i in "iiii" %}&nbsp;{% endfor %}&lt;/</span><span class="tag">li</span><span class="sub-sign">&gt;</span></li>
-
-                <li><span class="sub-sign ms-4">{% for i in "iiii" %}&nbsp;{% endfor %}&lt;</span><span class="tag">li</span><span class="sub-sign">&gt;</span></li>
-                <li><span class="ms-4">{% for i in "iiiiiiii" %}&nbsp;{% endfor %}1 year of Python and JavaScript experience (9 months of Flask/Jinja +3 months of Django/React.JS)</span></li>
-                <li><span class="sub-sign ms-4">{% for i in "iiii" %}&nbsp;{% endfor %}&lt;/</span><span class="tag">li</span><span class="sub-sign">&gt;</span></li>
+                <li><span class="ms-4 sign">function</span><span class="variable">&nbsp;linguistic_skills</span><span class="bracket">&lpar;&rpar; &lbrace;</span></li>
                 
-                <li><span class="sub-sign ms-4">{% for i in "iiii" %}&nbsp;{% endfor %}&lt;</span><span class="tag">li</span><span class="sub-sign">&gt;</span></li>
-                <li class="d-flex"><span class="ms-4">{% for i in "iiiiiiii" %}&nbsp;{% endfor %}<span class="sub-sign">&lt;</span><span class="tag">a</span><span class="attr">&nbsp;href</span><span class="sign">=</span><span class="string">"</span><a href="https://certificates.cs50.io/2b7e2e2f-398a-4945-9944-f7ee59d0bc77.pdf" target="_blank" rel="noopener noreferrer">Link of Certificate</a><span class="string">"</span><span class="sub-sign">&gt;</span>Harvard Certified Professional in CS50x<span class="sub-sign">&lt;/</span><span class="tag">a</span><span class="sub-sign">&gt;</span></span></li>
-                <li class="d-flex"><span class="sub-sign ms-4">{% for i in "iiii" %}&nbsp;{% endfor %}&lt;/</span><span class="tag">li</span><span class="sub-sign">&gt;</span></li>
+                <li><span class="ms-4 tag">{% for i in "iiii" %}&nbsp;{% endfor %}const</span><span class="variable">&nbsp;arabic</span><span class="sign">&nbsp;=&nbsp;</span><span class="string">'Native'</span><span class="sign">;</span></li>
+                <li><span class="ms-4 tag">{% for i in "iiii" %}&nbsp;{% endfor %}let</span><span class="variable">&nbsp;english</span><span class="sign">&nbsp;=&nbsp;</span><span class="string">'Very Good'</span><span class="sign">;</span></li>
+                <li><span class="ms-4 tag">{% for i in "iiii" %}&nbsp;{% endfor %}let</span><span class="variable">&nbsp;turkish</span><span class="sign">&nbsp;=&nbsp;</span><span class="string">'Beginner'</span><span class="sign">;</span></li>
+
+                <li><span class="ms-4"><span class="bracket">&rbrace;</span></li>
+
+                <li></li>
+
+                <li><span class="ms-4 sign">function</span><span class="variable">&nbsp;hobbies</span><span class="bracket">&lpar;&rpar; &lbrace;</span></li>
                 
-                <li class="d-flex"><span class="ms-4 sub-sign">&lt;/</span><span class="tag">ul</span><span class="sub-sign">&gt;</span></li>
+                <li><span class="ms-4 tag">{% for i in "iiii" %}&nbsp;{% endfor %}let</span><span class="variable">&nbsp;hobbies</span><span class="sign">&nbsp;=&nbsp;</span><span class="string"><span class="bracket">&lbrack;</span>'Making new stuff (Coding)'<span class="sign">,&nbsp;</span>'Volleyball'<span class="bracket">&rbrack;</span></span><span class="sign">;</span></li>
+
+                <li><span class="ms-4"><span class="bracket">&rbrace;</span></li>
             </ol>
 
         </div>

@@ -66,7 +66,16 @@ li:before {
     color: #80807a;
 }
 
+.innerHTML {
+    color: #cccccc;
+}
+
 /* CSS Colors */
 .selector {
     color: #d7ba7d;
+}
+
+/* JavaScript Colors */
+.bracket {
+    color: #f1d700;
 }
