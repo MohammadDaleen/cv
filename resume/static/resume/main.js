@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // Load default code
-  load_tab(`${tabsIDs[3]}`);
+  load_tab(`${tabsIDs[2]}`);
 });
 
 // Tabs

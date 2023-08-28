@@ -53,6 +53,18 @@ li:before {
     color: #ce9178;
 }
 
+.func {
+    color: #dcdcaa;
+}
+
+.reserve {
+    color: #c586c0;
+}
+
+.lib {
+    color: #4ec9b0;
+}
+
 /* HTML Colors */
 .tag {
     color: #569cd6;
