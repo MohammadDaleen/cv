@@ -131,10 +131,30 @@
             <ol id="py-code" style="display: none;">
                 <li><span class="ms-4 reserve">import</span><span class="lib">&nbsp;urllib.request</span></li>
                 <li></li>
-                <li><span class="ms-4 tag">class</span><span class="lib">&nbsp;Projects</span><span class="sign">:</span></li>
-                
-                <li><span class="ms-4 variable">{% for i in "iiii" %}&nbsp;{% endfor %}description</span><span class="sign">&nbsp;=&nbsp;</span><span class="string">"foo"</span></li>
-                <li><span class="ms-4 variable">{% for i in "iiii" %}&nbsp;{% endfor %}url</span><span class="sign">&nbsp;=&nbsp;</span><span class="lib">urllib</span><span class="sign">.</span><span class="lib">request</span><span class="sign">.</span><span class="func">urlopen</span><span class="bracket">&lpar;<span class="string">"https:www.example.com"</span>&rpar;</span></li>
+                <li><span class="ms-4 tag">class</span><span class="lib">&nbsp;Project</span><span class="sign">:</span></li>
+                <li><span class="ms-4 tag">{% for i in "iiii" %}&nbsp;{% endfor %}def</span><span class="func">&nbsp;__init__</span><span class="bracket">&lpar;<span class="variable">self<span class="sign">,&nbsp;</span>description<span class="sign">,&nbsp;</span>url</span>&rpar;</span><span class="sign">:</span></li>
+                <li><span class="ms-4 variable">{% for i in "iiiiiiii" %}&nbsp;{% endfor %}self<span class="sign">.</span>description<span class="sign">&nbsp;=&nbsp;</span>description</span></li>
+                <li><span class="ms-4 variable">{% for i in "iiiiiiii" %}&nbsp;{% endfor %}self<span class="sign">.</span>url<span class="sign">&nbsp;=&nbsp;</span><span class="lib">urllib</span><span class="sign">.</span><span class="lib">request</span><span class="sign">.</span><span class="func">urlopen</span><span class="bracket">&lpar;</span>url<span class="bracket">&rpar;</span></span></li>
+                <li></li>
+                <li><span class="ms-4 variable">projectBroom</span><span class="sign">&nbsp;=&nbsp;</span><span class="lib">Project</span><span class="bracket">&lpar;<span class="string">"A website that offeres device care services"<span class="sign">,&nbsp;</span></span></span></li>
+                <li><span class="ms-4 string">{% for i in "ProjectBroom = Project(" %}&nbsp;{% endfor %}"<a href="https://mohammaddaleen.pythonanywhere.com" target="_blank" rel="noopener noreferrer">mohammaddaleen.pythonanywhere.com</a>"</span><span class="bracket">&rpar;&nbsp;</span></li>
+                <li class="d-flex"></li>
+                <li class="d-flex"><span class="ms-4 variable">projectSearch</span><span class="sign">&nbsp;=&nbsp;</span><span class="lib">Project</span><span class="bracket">&lpar;<span class="string">"Google-like user interface connected to google search engine"<span class="sign">,&nbsp;</span></span></span></li>
+                <li class="d-flex"><span class="ms-4 string">{% for i in "projectSearch = Project(" %}&nbsp;{% endfor %}"<a href="https://github.com/MohammadDaleen/cs50w/tree/main/Project0Search" target="_blank" rel="noopener noreferrer">https://github.com/MohammadDaleen/cs50w/tree/main/Project0Search</a>"</span><span class="bracket">&rpar;&nbsp;</span></li>
+                <li class="d-flex"></li>
+                <li class="d-flex"><span class="ms-4 variable">projectWiki</span><span class="sign">&nbsp;=&nbsp;</span><span class="lib">Project</span><span class="bracket">&lpar;<span class="string">"Encyclopedia that functions just like Wikipedia (stores data as MarkDown language)"<span class="sign">,&nbsp;</span></span></span></li>
+                <li class="d-flex"><span class="ms-4 string">{% for i in "projectWiki = Project(" %}&nbsp;{% endfor %}"<a href="https://github.com/MohammadDaleen/cs50w/tree/main/Project1Wiki" target="_blank" rel="noopener noreferrer">https://github.com/MohammadDaleen/cs50w/tree/main/Project1Wiki</a>"</span><span class="bracket">&rpar;&nbsp;</span></li>
+                <li class="d-flex"></li>
+                <li class="d-flex"><span class="ms-4 variable">projectCommerce</span><span class="sign">&nbsp;=&nbsp;</span><span class="lib">Project</span><span class="bracket">&lpar;<span class="string">"Ebay-like auctions website that allows users to bid on listed stuff"<span class="sign">,&nbsp;</span></span></span></li>
+                <li class="d-flex"><span class="ms-4 string">{% for i in "projectCommerce = Project(" %}&nbsp;{% endfor %}"<a href="https://github.com/MohammadDaleen/cs50w/tree/main/Project2Commerce" target="_blank" rel="noopener noreferrer">https://github.com/MohammadDaleen/cs50w/tree/main/Project2Commerce</a>"</span><span class="bracket">&rpar;&nbsp;</span></li>
+                <li class="d-flex"></li>
+                <li class="d-flex"><span class="ms-4 variable">projectMail</span><span class="sign">&nbsp;=&nbsp;</span><span class="lib">Project</span><span class="bracket">&lpar;<span class="string">"Gmail-like mail webapp that allows users to send and recive emails (sandbox)"<span class="sign">,&nbsp;</span></span></span></li>
+                <li class="d-flex"><span class="ms-4 string">{% for i in "projectMail = Project(" %}&nbsp;{% endfor %}"<a href="https://github.com/MohammadDaleen/cs50w/tree/main/Project3Mail" target="_blank" rel="noopener noreferrer">https://github.com/MohammadDaleen/cs50w/tree/main/Project3Mail</a>"</span><span class="bracket">&rpar;&nbsp;</span></li>
+                <li class="d-flex"></li>
+                <li class="d-flex"><span class="ms-4 variable">projectNetwork</span><span class="sign">&nbsp;=&nbsp;</span><span class="lib">Project</span><span class="bracket">&lpar;<span class="string">"Twitter-like social media webapp that allows users to upload text-based posts "<span class="sign">/&nbsp;</span></span></span></li>
+                <li class="d-flex"><span class="ms-4 string">{% for i in "projectNetwork = Project(" %}&nbsp;{% endfor %}"and read other's posts"</span><span class="sign">,&nbsp;</span></li>
+                <li class="d-flex"><span class="ms-4 string">{% for i in "projectNetwork = Project(" %}&nbsp;{% endfor %}"<a href="https://github.com/MohammadDaleen/cs50w/tree/main/Project4Network" target="_blank" rel="noopener noreferrer">https://github.com/MohammadDaleen/cs50w/tree/main/Project4Network</a>"</span><span class="bracket">&rpar;&nbsp;</span></li>
+
             </ol>
 
 
@@ -158,4 +178,24 @@
 
         </div>
     </div>
+
+    <footer id="terminal" class="mt-auto">
+        <div class="container-lg">
+            <div class="align-items-center d-flex justify-content-center p-5 row text-light">
+                <div class="col-12 col-md-12 col-lg-4 col-xxl-4 d-flex justify-content-center pb-3 pb-lg-0 px-0">
+                    <span class="my-auto text-center">© 2022 Broom Inc. All rights reserved.</span>
+                </div>
+                <div class="col-2 col-md-1 col-lg-1 col-xxl-1 d-flex justify-content-center pb-0 px-0">
+                    <a class="btn btn-light p-2 rounded-circle shadow" href="https://wa.me/966534785904" rel="noopener noreferrer" role="button" target="_blank">
+                        <img alt="Whatsapp Icon" class="align-item-center d-flex justify-content-center" height="auto" src="/static/ico/whatsapp.ico" width="20">
+                    </a>
+                </div>
+                <div class="col-2 col-md-1 col-lg-1 col-xxl-1 d-flex justify-content-center pb-0 px-0">
+                    <a class="btn btn-light p-2 rounded-circle shadow" href="mailto:broom.meknasa@gmail.com" role="button">
+                        <img alt="Gmail Icon" class="d-flex align-item-center justify-content-center" height="auto" src="/static/ico/gmail.ico" width="20">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 {% endblock %}
