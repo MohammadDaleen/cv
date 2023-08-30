@@ -3,8 +3,14 @@
 {% load static %}
 
 {% block body %}
-    <div class="row d-flex align-content-stretch text-white">
-        <div id="sidebar" class="col-3 sidebar p-0">
+    <nav id="navbar" class="bg-dark navbar navbar-dark navbar-expand-lg p-1">
+        <div class="container-fluid d-flex align-items-center">
+            <a class="h5 mb-0 navbar-brand" href="">About Me</a>
+        </div>
+    </nav>
+    <!--div id="body" class="container-fluid d-flex align-items-stretch p-0"-->
+    <main class="row text-white">
+        <div id="sidebar" class="col-3 sidebar pe-0">
             <div class='d-flex align-items-center p-2 border-dark border-bottom'>
                 EXPLORER
             </div>
@@ -49,7 +55,7 @@
         </div>
 
 
-        <div id="main" class="col-9 p-0">
+        <div id="main" class="col-9 ps-0">
             <div id="navbar" class='d-flex align-items-center border-dark border-bottom border-top'>
                 
                 <div id="html" class="d-flex align-items-center justify-content-center p-2">
@@ -89,7 +95,7 @@
 
             </div>
             
-            <ol id="html-code" style="display: none;">
+            <ol id="html-code" class="m-0" style="display: none;">
                 <li><span class="ms-4 sub-sign">&lt;</span><span class="tag">ul</span>&nbsp;<span class="attr">id</span><span class="sign">=</span><span class="string">"professional_profile"</span><span class="sub-sign">&gt;</span></li>
 
                 <li><span class="sub-sign ms-4">{% for i in "iiii" %}&nbsp;{% endfor %}&lt;</span><span class="tag">li</span><span class="sub-sign">&gt;</span></li>
@@ -108,7 +114,7 @@
                 <li class="d-flex"><span class="ms-4 sub-sign">&lt;/</span><span class="tag">ul</span><span class="sub-sign">&gt;</span></li>
             </ol>
 
-            <ol id="css-code" style="display: none;">
+            <ol id="css-code" class="m-0" style="display: none;">
                 <li><span class="ms-4 selector">#education&nbsp;&lcub;</span>
 
                 <li><span class="ms-4 attr">{% for i in "iiii" %}&nbsp;{% endfor %}high-school</span>:<span class="string">&nbsp;Passed General Secondary Exams Scientific with 99.78%</span>;
@@ -128,7 +134,7 @@
             </ol>
 
             
-            <ol id="py-code" style="display: none;">
+            <ol id="py-code" class="m-0" style="display: none;">
                 <li><span class="ms-4 reserve">import</span><span class="lib">&nbsp;urllib.request</span></li>
                 <li></li>
                 <li><span class="ms-4 tag">class</span><span class="lib">&nbsp;Project</span><span class="sign">:</span></li>
@@ -158,7 +164,7 @@
             </ol>
 
 
-            <ol id="js-code" style="display: none;">
+            <ol id="js-code" class="m-0" style="display: none;">
                 <li><span class="ms-4 sign">function</span><span class="variable">&nbsp;linguistic_skills</span><span class="bracket">&lpar;&rpar; &lbrace;</span></li>
                 
                 <li><span class="ms-4 tag">{% for i in "iiii" %}&nbsp;{% endfor %}const</span><span class="variable">&nbsp;arabic</span><span class="sign">&nbsp;=&nbsp;</span><span class="string">'Native'</span><span class="sign">;</span></li>

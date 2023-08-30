@@ -11,14 +11,7 @@
         <script src="{% static 'resume/main.js' %}"></script>
     </head>
     <body class="p-0">
-        <nav id="navbar" class="bg-dark navbar navbar-dark navbar-expand-lg p-1">
-            <div class="container-fluid d-flex align-items-center">
-                <a class="h5 mb-0 navbar-brand" href="">About Me</a>
-            </div>
-        </nav>
-        <div id="body" class="container-fluid">
-            {% block body %}
-            {% endblock %}
-        </div>
+        {% block body %}
+        {% endblock %}
     </body>
 </html>
