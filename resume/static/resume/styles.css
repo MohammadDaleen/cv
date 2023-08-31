@@ -16,16 +16,16 @@ body {
 }
 
 #profile {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
 }
 
 main {
     background: #1f1f1f;
+    height: 94%;
 }
 
 #py-code {
-    height:353.2px;
     overflow:scroll;
     overflow-x:hidden;
 }
@@ -42,11 +42,6 @@ main {
 
 #py-code::-webkit-scrollbar-thumb {
     background-color: #2f3133;
-}
-
-/* terminal style */
-#terminal {
-    background: #181818;
 }
 
 /* change cursor form when hovering on tabs text */
