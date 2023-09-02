@@ -1,6 +1,7 @@
 body {
     font-family: Consolas, 'Courier New', monospace;
     height: 100vh;
+    overflow-y: hidden;    
 }
 
 #navbar {
@@ -20,14 +21,14 @@ body {
     height: 100px;
 }
 
-main {
+#main {
     background: #1f1f1f;
-    height: 94%;
+    height: 100%;
 }
 
 #py-code {
-    overflow:scroll;
-    overflow-x:hidden;
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
 /* py-code ScrollBar */
