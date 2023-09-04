@@ -1,6 +1,11 @@
+/* Change font family and size of website */
 body {
     font-family: Consolas, 'Courier New', monospace;
     height: 100vh;
+}
+
+.bg-default {
+    background: #181818;
 }
 
 #navbar {
@@ -20,10 +25,10 @@ body {
     height: 150px;
 }
 
-#main {
+/* #main {
     background: #1f1f1f;
     height: 100%;
-}
+} */
 
 #py-code {
     height: 450px;
