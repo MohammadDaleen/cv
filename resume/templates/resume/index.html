@@ -3,13 +3,13 @@
 {% load static %}
 
 {% block body %}
-    <nav id="navbar" class="bg-dark navbar navbar-dark navbar-expand-lg p-1">
+    <nav class="bg-dark navbar navbar-dark navbar-expand-lg p-1">
         <div class="container-fluid d-flex align-items-center">
             <a class="h5 mb-0 navbar-brand" href="">About Me</a>
         </div>
     </nav>
     <!--div id="body" class="container-fluid d-flex align-items-stretch p-0"-->
-    <div id="main" class="text-white d-flex">
+    <div id="main" class="text-white d-flex p-0 m-0">
         <div id="sidebar" class="col-3 sidebar p-0">
             <div class='d-flex align-items-center p-2 border-dark border-bottom'>
                 EXPLORER
@@ -55,7 +55,7 @@
         </div>
 
 
-        <div id="code" class="col-9 p-0">
+        <div id="code" class="col-9 p-0 d-flex flex-column">
             <div id="navbar" class='d-flex align-items-center border-dark border-bottom border-top'>
                 
                 <div id="html" class="d-flex align-items-center justify-content-center p-2">
@@ -132,7 +132,6 @@
 
                 <li class="d-flex"><span class="ms-4 selector">&lcub;</span>
             </ol>
-
             
             <ol id="py-code" class="m-0" style="display: none;">
                 <li><span class="ms-4 reserve">import</span><span class="lib">&nbsp;urllib.request</span></li>
@@ -163,7 +162,6 @@
 
             </ol>
 
-
             <ol id="js-code" class="m-0" style="display: none;">
                 <li><span class="ms-4 sign">function</span><span class="variable">&nbsp;linguistic_skills</span><span class="bracket">&lpar;&rpar; &lbrace;</span></li>
                 
@@ -181,6 +179,26 @@
 
                 <li><span class="ms-4"><span class="bracket">&rbrace;</span></li>
             </ol>
+
+            <footer class="bg-dark mt-auto">
+                <div class="container-lg">
+                    <div class="align-items-center d-flex justify-content-center p-5 row text-light">
+                        <div class="col-12 col-md-12 col-lg-4 col-xxl-4 d-flex justify-content-center pb-3 pb-lg-0 px-0">
+                            <span class="my-auto text-center">© 2022 Broom Inc. All rights reserved.</span>
+                        </div>
+                        <div class="col-2 col-md-1 col-lg-1 col-xxl-1 d-flex justify-content-center pb-0 px-0">
+                            <a class="btn btn-light p-2 rounded-circle shadow" href="https://wa.me/966534785904" rel="noopener noreferrer" role="button" target="_blank">
+                                <img alt="Whatsapp Icon" class="align-item-center d-flex justify-content-center" height="auto" src="/static/ico/whatsapp.ico" width="20">
+                            </a>
+                        </div>
+                        <div class="col-2 col-md-1 col-lg-1 col-xxl-1 d-flex justify-content-center pb-0 px-0">
+                            <a class="btn btn-light p-2 rounded-circle shadow" href="mailto:broom.meknasa@gmail.com" role="button">
+                                <img alt="Gmail Icon" class="d-flex align-item-center justify-content-center" height="auto" src="/static/ico/gmail.ico" width="20">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
 
         </div>
     </div>

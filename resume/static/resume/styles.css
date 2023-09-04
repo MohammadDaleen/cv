@@ -1,7 +1,6 @@
 body {
     font-family: Consolas, 'Courier New', monospace;
     height: 100vh;
-    overflow-y: hidden;    
 }
 
 #navbar {
@@ -17,8 +16,8 @@ body {
 }
 
 #profile {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
 }
 
 #main {
@@ -27,6 +26,7 @@ body {
 }
 
 #py-code {
+    height: 450px;
     overflow: scroll;
     overflow-x: hidden;
 }
