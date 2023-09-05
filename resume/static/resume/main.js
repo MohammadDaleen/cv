@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // Load default code
-  load_tab(`${tabsIDs[2]}`);
+  load_tab(`${tabsIDs[0]}`);
 });
 
 // Tabs
@@ -23,8 +23,10 @@ function load_tab(tab) {
   // Set current tab background to selected color
   const currentTab = document.querySelector(`#${tab}`);
   currentTab.style.background = '#1f1f1f';
-  currentTab.classList.remove("border-dark");
-  currentTab.classList.remove("border");
+  currentTab.classList.remove("border-secondary");
+  currentTab.classList.remove("border-end");
+  currentTab.classList.remove('border-bottom');
+  currentTab.classList.remove("border-opacity-25");
   currentTab.classList.add("border-top");
   currentTab.classList.add("border-primary");
 }
@@ -40,7 +42,9 @@ function setTabsToDefault(){
     tab.style.background = '#181818';
     tab.classList.remove("border-primary");
     tab.classList.remove("border-top");
-    tab.classList.add('border-dark');
-    tab.classList.add('border');
+    tab.classList.add('border-secondary');
+    tab.classList.add('border-end');
+    tab.classList.add('border-bottom');
+    tab.classList.add("border-opacity-25");
   }
 }

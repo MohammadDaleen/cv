@@ -3,204 +3,213 @@
 {% load static %}
 
 {% block body %}
-    <div id="main">
+    <div class="h-100" id="main">
 
         <nav class="navbar navbar-dark p-1 border-secondary border-bottom border-opacity-25">
             <div class="container-fluid d-flex align-items-center">
                 <a class="h5 mb-0 navbar-brand" href="">About Me</a>
             </div>
         </nav>
+        
+        <div class="d-flex m-0 p-0">
+            <div class="m-0 p-0 border-secondary border-end border-opacity-25">
+                <button class="btn p-3" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-expanded="false" aria-controls="collapseWidthExample">
+                    <i class="fa-regular fa-copy fa-2xl" style="color: #d7d7d7;"></i>
+                </button>
+            </div>
 
-        <div id="sidebar" class="col-3 sidebar p-0">
-            <div class='d-flex align-items-center p-2 border-dark border-bottom'>
-                EXPLORER
-            </div>
-            <div class="d-flex justify-content-evenly align-items-center py-3">
-                <img id="profile" src="{% static 'resume/profile.png' %}" class="rounded-circle" alt="Profile Picture">
-                <h3 style="font-family: Georgia;">
-                    <div>MOHAMMAD</div>
-                    <div>ABDOU</div>
-                    <div>DALEEN</div>
-                </h3>
-            </div>
-            <div id="selected" class="border border-info">
-                <p class="m-1">
-                    <i class="fa-solid fa-chevron-down" style="color: #ffffff;"></i>
-                    CONTACT
-                </p>
-            </div>
-            <div>
-                <p class="m-1 ms-4">
-                    <i class="fa-regular fa-envelope" style="color: #e94234;"></i>
-                    mohammaddalien2003@gmail.com
-                </p>
-            </div>
-            <div>
-                <p class="m-1 ms-4">
-                    <i class="fa-solid fa-mobile-screen"></i>
-                    +966534785904
-                </p>
-            </div>
-            <div>
-                <p class="m-1 ms-4">
-                    <i class="fa-solid fa-location-dot" style="color: #ff0000;"></i>
-                    Riyadh, Saudi Arabia
-                </p>
-            </div>
-            <div>
-                <p class="m-1 ms-4">
-                    <i class="fa-brands fa-linkedin-in" style="color: #519aba;"></i>
-                    linkedin.com/in/mohammad-daleen-b43799285
-                </p>
-            </div>
-        </div>
-
-
-        <div id="code" class="col-9 p-0 d-flex flex-column">
-            <div id="navbar" class='d-flex align-items-center border-dark border-bottom border-top'>
-                
-                <div id="html" class="d-flex align-items-center justify-content-center p-2">
-                    <div class="d-flex justify-content-start align-items-center">                        
-                        <i class="fa-solid fa-angle-left" style="color: #e37932;"></i>
-                        <i class="fa-solid fa-angle-right" style="color: #e37932;"></i>
-                    </div>
-                    <div class="mx-2">
-                        professional_profile.html
-                    </div>
-                    <i class="fa-solid fa-xmark" style="color: #ffffff;"></i>
+            <div class="collapse collapse-horizontal show sidebar m-0 p-0 text-nowrap border-secondary border-end border-opacity-25" id="sidebar">
+                <div class='d-flex align-items-center p-2 border-secondary border-bottom border-opacity-25'>
+                    EXPLORER
                 </div>
-
-                <div id="css" class="d-flex align-items-center justify-content-center p-2">
-                    <i class="fa-solid fa-hashtag" style="color: #519aba;"></i>
-                    <div class="mx-2">
-                        education_and_certificates.css
-                    </div>
-                    <i class="fa-solid fa-xmark" style="color: #ffffff;"></i>
+                <div class="d-flex align-items-center py-3">
+                    <img id="profile" src="{% static 'resume/profile.png' %}" class="rounded-circle mx-3" alt="Profile Picture">
+                    <h3 class="m-0 me-3" style="font-family: Georgia;">
+                        <div>MOHAMMAD</div>
+                        <div>ABDOU</div>
+                        <div>DALEEN</div>
+                    </h3>
                 </div>
-
-                <div id="py" class="d-flex align-items-center justify-content-center p-2">
-                    <i class="fa-brands fa-python" style="color: #519aba;"></i>
-                    <div class="mx-2">
-                        projects.py
-                    </div>
-                    <i class="fa-solid fa-xmark" style="color: #ffffff;"></i>
+                <div id="selected" class="border border-info">
+                    <p class="m-1">
+                        <i class="fa-solid fa-chevron-down" style="color: #ffffff;"></i>
+                        CONTACT
+                    </p>
                 </div>
-
-                <div id="js" class="d-flex align-items-center justify-content-center p-2">
-                    <i class="fa-brands fa-square-js" style="color: #cbcb41;"></i>
-                    <div class="mx-2">
-                        linguistic_skills_and_hobbies.js
-                    </div>
-                    <i class="fa-solid fa-xmark" style="color: #ffffff;"></i>
+                <div>
+                    <p class="m-1 ms-4">
+                        <i class="fa-regular fa-envelope" style="color: #e94234;"></i>
+                        mohammaddalien2003@gmail.com
+                    </p>
                 </div>
-
+                <div>
+                    <p class="m-1 ms-4">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                        +966534785904
+                    </p>
+                </div>
+                <div>
+                    <p class="m-1 ms-4">
+                        <i class="fa-solid fa-location-dot" style="color: #ff0000;"></i>
+                        Riyadh, Saudi Arabia
+                    </p>
+                </div>
+                <div>
+                    <p class="m-1 ms-4">
+                        <i class="fa-brands fa-linkedin-in" style="color: #519aba;"></i>
+                        <a href="https://linkedin.com/in/mohammad-daleen-b43799285" target="_blank" rel="noopener noreferrer">My linkedin</a>
+                    </p>
+                </div>    
             </div>
             
-            <ol id="html-code" class="m-0" style="display: none;">
-                <li><span class="ms-4 sub-sign">&lt;</span><span class="tag">ul</span>&nbsp;<span class="attr">id</span><span class="sign">=</span><span class="string">"professional_profile"</span><span class="sub-sign">&gt;</span></li>
+            <div id="code" class="p-0 m-0 d-flex flex-column container-fluid">
 
-                <li><span class="sub-sign ms-4">{% for i in "iiii" %}&nbsp;{% endfor %}&lt;</span><span class="tag">li</span><span class="sub-sign">&gt;</span></li>
-                <li><span class="innerHTML ms-4">{% for i in "iiiiiiii" %}&nbsp;{% endfor %}Full stack developer working with a lot of languages, frameworks, and technologies</span></li>
-                <li><span class="innerHTML ms-4">{% for i in "iiiiiiii" %}&nbsp;{% endfor %}such as: Python, HTML, CSS, JavaScript, SQL, C, Django, React.JS, Git, Flask, Jinja, Bootstrap, Sass, Docker</span></li>
-                <li><span class="sub-sign ms-4">{% for i in "iiii" %}&nbsp;{% endfor %}&lt;/</span><span class="tag">li</span><span class="sub-sign">&gt;</span></li>
-
-                <li><span class="sub-sign ms-4">{% for i in "iiii" %}&nbsp;{% endfor %}&lt;</span><span class="tag">li</span><span class="sub-sign">&gt;</span></li>
-                <li><span class="innerHTML ms-4">{% for i in "iiiiiiii" %}&nbsp;{% endfor %}1 year of Python and JavaScript experience (9 months of Flask/Jinja +3 months of Django/React.JS)</span></li>
-                <li><span class="sub-sign ms-4">{% for i in "iiii" %}&nbsp;{% endfor %}&lt;/</span><span class="tag">li</span><span class="sub-sign">&gt;</span></li>
-                
-                <li><span class="sub-sign ms-4">{% for i in "iiii" %}&nbsp;{% endfor %}&lt;</span><span class="tag">li</span><span class="sub-sign">&gt;</span></li>
-                <li class="d-flex"><span class="innerHTML ms-4">{% for i in "iiiiiiii" %}&nbsp;{% endfor %}<span class="sub-sign">&lt;</span><span class="tag">a</span><span class="attr">&nbsp;href</span><span class="sign">=</span><span class="string">"</span><a href="https://certificates.cs50.io/2b7e2e2f-398a-4945-9944-f7ee59d0bc77.pdf" target="_blank" rel="noopener noreferrer">Link of Certificate</a><span class="string">"</span><span class="sub-sign">&gt;</span>Harvard Certified Professional in CS50x<span class="sub-sign">&lt;/</span><span class="tag">a</span><span class="sub-sign">&gt;</span></span></li>
-                <li class="d-flex"><span class="sub-sign ms-4">{% for i in "iiii" %}&nbsp;{% endfor %}&lt;/</span><span class="tag">li</span><span class="sub-sign">&gt;</span></li>
-                
-                <li class="d-flex"><span class="ms-4 sub-sign">&lt;/</span><span class="tag">ul</span><span class="sub-sign">&gt;</span></li>
-            </ol>
-
-            <ol id="css-code" class="m-0" style="display: none;">
-                <li><span class="ms-4 selector">#education&nbsp;&lcub;</span>
-
-                <li><span class="ms-4 attr">{% for i in "iiii" %}&nbsp;{% endfor %}high-school</span>:<span class="string">&nbsp;Passed General Secondary Exams Scientific with 99.78%</span>;
-                <li><span class="ms-4 attr">{% for i in "iiii" %}&nbsp;{% endfor %}university</span>:<span class="string">&nbsp;Bachelor's degree in <b><i>Computer Science</i></b> with 3.93 of 4.00 GPA from Faculy of </span>
-                <li><span class="ms-4 string">{% for i in "iiii" %}&nbsp;{% endfor %}Computer Studies FCS(Arab Open University(AOU)) in 2025 in Saudi Arabia</span>;
-                
-                <li><span class="ms-4 selector">&lcub;</span>
-
-
-                <li><span class="ms-4 selector">#certificates&nbsp;&lcub;</span>
-
-                <li><span class="ms-4 attr">{% for i in "iiii" %}&nbsp;{% endfor %}cs50x</span>:<span class="string">&nbsp;Harvard Certified Professional in CS50x</span>;
-                <li><span class="ms-4 attr">{% for i in "iiii" %}&nbsp;{% endfor %}hour-of-code-2020</span>:<span class="string">&nbsp;Microsoft Certificate of Completion of the Hour of Code 2020</span>
-                <li><span class="ms-4 string">{% for i in "iiii" %}&nbsp;{% endfor %}and for demonstrating creativity and problem solving skills</span>;
-
-                <li class="d-flex"><span class="ms-4 selector">&lcub;</span>
-            </ol>
-            
-            <ol id="py-code" class="m-0" style="display: none;">
-                <li><span class="ms-4 reserve">import</span><span class="lib">&nbsp;urllib.request</span></li>
-                <li></li>
-                <li><span class="ms-4 tag">class</span><span class="lib">&nbsp;Project</span><span class="sign">:</span></li>
-                <li><span class="ms-4 tag">{% for i in "iiii" %}&nbsp;{% endfor %}def</span><span class="func">&nbsp;__init__</span><span class="bracket">&lpar;<span class="variable">self<span class="sign">,&nbsp;</span>description<span class="sign">,&nbsp;</span>url</span>&rpar;</span><span class="sign">:</span></li>
-                <li><span class="ms-4 variable">{% for i in "iiiiiiii" %}&nbsp;{% endfor %}self<span class="sign">.</span>description<span class="sign">&nbsp;=&nbsp;</span>description</span></li>
-                <li><span class="ms-4 variable">{% for i in "iiiiiiii" %}&nbsp;{% endfor %}self<span class="sign">.</span>url<span class="sign">&nbsp;=&nbsp;</span><span class="lib">urllib</span><span class="sign">.</span><span class="lib">request</span><span class="sign">.</span><span class="func">urlopen</span><span class="bracket">&lpar;</span>url<span class="bracket">&rpar;</span></span></li>
-                <li></li>
-                <li><span class="ms-4 variable">projectBroom</span><span class="sign">&nbsp;=&nbsp;</span><span class="lib">Project</span><span class="bracket">&lpar;<span class="string">"A website that offeres device care services"<span class="sign">,&nbsp;</span></span></span></li>
-                <li><span class="ms-4 string">{% for i in "ProjectBroom = Project(" %}&nbsp;{% endfor %}"<a href="https://mohammaddaleen.pythonanywhere.com" target="_blank" rel="noopener noreferrer">mohammaddaleen.pythonanywhere.com</a>"</span><span class="bracket">&rpar;&nbsp;</span></li>
-                <li class="d-flex"></li>
-                <li class="d-flex"><span class="ms-4 variable">projectSearch</span><span class="sign">&nbsp;=&nbsp;</span><span class="lib">Project</span><span class="bracket">&lpar;<span class="string">"Google-like user interface connected to google search engine"<span class="sign">,&nbsp;</span></span></span></li>
-                <li class="d-flex"><span class="ms-4 string">{% for i in "projectSearch = Project(" %}&nbsp;{% endfor %}"<a href="https://github.com/MohammadDaleen/cs50w/tree/main/Project0Search" target="_blank" rel="noopener noreferrer">https://github.com/MohammadDaleen/cs50w/tree/main/Project0Search</a>"</span><span class="bracket">&rpar;&nbsp;</span></li>
-                <li class="d-flex"></li>
-                <li class="d-flex"><span class="ms-4 variable">projectWiki</span><span class="sign">&nbsp;=&nbsp;</span><span class="lib">Project</span><span class="bracket">&lpar;<span class="string">"Encyclopedia that functions just like Wikipedia (stores data as MarkDown language)"<span class="sign">,&nbsp;</span></span></span></li>
-                <li class="d-flex"><span class="ms-4 string">{% for i in "projectWiki = Project(" %}&nbsp;{% endfor %}"<a href="https://github.com/MohammadDaleen/cs50w/tree/main/Project1Wiki" target="_blank" rel="noopener noreferrer">https://github.com/MohammadDaleen/cs50w/tree/main/Project1Wiki</a>"</span><span class="bracket">&rpar;&nbsp;</span></li>
-                <li class="d-flex"></li>
-                <li class="d-flex"><span class="ms-4 variable">projectCommerce</span><span class="sign">&nbsp;=&nbsp;</span><span class="lib">Project</span><span class="bracket">&lpar;<span class="string">"Ebay-like auctions website that allows users to bid on listed stuff"<span class="sign">,&nbsp;</span></span></span></li>
-                <li class="d-flex"><span class="ms-4 string">{% for i in "projectCommerce = Project(" %}&nbsp;{% endfor %}"<a href="https://github.com/MohammadDaleen/cs50w/tree/main/Project2Commerce" target="_blank" rel="noopener noreferrer">https://github.com/MohammadDaleen/cs50w/tree/main/Project2Commerce</a>"</span><span class="bracket">&rpar;&nbsp;</span></li>
-                <li class="d-flex"></li>
-                <li class="d-flex"><span class="ms-4 variable">projectMail</span><span class="sign">&nbsp;=&nbsp;</span><span class="lib">Project</span><span class="bracket">&lpar;<span class="string">"Gmail-like mail webapp that allows users to send and recive emails (sandbox)"<span class="sign">,&nbsp;</span></span></span></li>
-                <li class="d-flex"><span class="ms-4 string">{% for i in "projectMail = Project(" %}&nbsp;{% endfor %}"<a href="https://github.com/MohammadDaleen/cs50w/tree/main/Project3Mail" target="_blank" rel="noopener noreferrer">https://github.com/MohammadDaleen/cs50w/tree/main/Project3Mail</a>"</span><span class="bracket">&rpar;&nbsp;</span></li>
-                <li class="d-flex"></li>
-                <li class="d-flex"><span class="ms-4 variable">projectNetwork</span><span class="sign">&nbsp;=&nbsp;</span><span class="lib">Project</span><span class="bracket">&lpar;<span class="string">"Twitter-like social media webapp that allows users to upload text-based posts "<span class="sign">/&nbsp;</span></span></span></li>
-                <li class="d-flex"><span class="ms-4 string">{% for i in "projectNetwork = Project(" %}&nbsp;{% endfor %}"and read other's posts"</span><span class="sign">,&nbsp;</span></li>
-                <li class="d-flex"><span class="ms-4 string">{% for i in "projectNetwork = Project(" %}&nbsp;{% endfor %}"<a href="https://github.com/MohammadDaleen/cs50w/tree/main/Project4Network" target="_blank" rel="noopener noreferrer">https://github.com/MohammadDaleen/cs50w/tree/main/Project4Network</a>"</span><span class="bracket">&rpar;&nbsp;</span></li>
-
-            </ol>
-
-            <ol id="js-code" class="m-0" style="display: none;">
-                <li><span class="ms-4 sign">function</span><span class="variable">&nbsp;linguistic_skills</span><span class="bracket">&lpar;&rpar; &lbrace;</span></li>
-                
-                <li><span class="ms-4 tag">{% for i in "iiii" %}&nbsp;{% endfor %}const</span><span class="variable">&nbsp;arabic</span><span class="sign">&nbsp;=&nbsp;</span><span class="string">'Native'</span><span class="sign">;</span></li>
-                <li><span class="ms-4 tag">{% for i in "iiii" %}&nbsp;{% endfor %}let</span><span class="variable">&nbsp;english</span><span class="sign">&nbsp;=&nbsp;</span><span class="string">'Very Good'</span><span class="sign">;</span></li>
-                <li><span class="ms-4 tag">{% for i in "iiii" %}&nbsp;{% endfor %}let</span><span class="variable">&nbsp;turkish</span><span class="sign">&nbsp;=&nbsp;</span><span class="string">'Beginner'</span><span class="sign">;</span></li>
-
-                <li><span class="ms-4"><span class="bracket">&rbrace;</span></li>
-
-                <li></li>
-
-                <li><span class="ms-4 sign">function</span><span class="variable">&nbsp;hobbies</span><span class="bracket">&lpar;&rpar; &lbrace;</span></li>
-                
-                <li><span class="ms-4 tag">{% for i in "iiii" %}&nbsp;{% endfor %}let</span><span class="variable">&nbsp;hobbies</span><span class="sign">&nbsp;=&nbsp;</span><span class="string"><span class="bracket">&lbrack;</span>'Making new stuff (Coding)'<span class="sign">,&nbsp;</span>'Volleyball'<span class="bracket">&rbrack;</span></span><span class="sign">;</span></li>
-
-                <li><span class="ms-4"><span class="bracket">&rbrace;</span></li>
-            </ol>
-
-            <footer class="bg-dark mt-auto">
-                <div class="container-lg">
-                    <div class="align-items-center d-flex justify-content-center p-5 row text-light">
-                        <div class="col-12 col-md-12 col-lg-4 col-xxl-4 d-flex justify-content-center pb-3 pb-lg-0 px-0">
-                            <span class="my-auto text-center">© 2022 Broom Inc. All rights reserved.</span>
+                <div id="navbar" class='d-flex align-items-center'>
+                    
+                    <div id="html" class="d-flex align-items-center justify-content-center p-2">
+                        <div class="d-flex justify-content-start align-items-center">                        
+                            <i class="fa-solid fa-angle-left" style="color: #e37932;"></i>
+                            <i class="fa-solid fa-angle-right" style="color: #e37932;"></i>
                         </div>
-                        <div class="col-2 col-md-1 col-lg-1 col-xxl-1 d-flex justify-content-center pb-0 px-0">
-                            <a class="btn btn-light p-2 rounded-circle shadow" href="https://wa.me/966534785904" rel="noopener noreferrer" role="button" target="_blank">
-                                <img alt="Whatsapp Icon" class="align-item-center d-flex justify-content-center" height="auto" src="/static/ico/whatsapp.ico" width="20">
-                            </a>
+                        <div class="mx-2">
+                            professional_profile.html
                         </div>
-                        <div class="col-2 col-md-1 col-lg-1 col-xxl-1 d-flex justify-content-center pb-0 px-0">
-                            <a class="btn btn-light p-2 rounded-circle shadow" href="mailto:broom.meknasa@gmail.com" role="button">
-                                <img alt="Gmail Icon" class="d-flex align-item-center justify-content-center" height="auto" src="/static/ico/gmail.ico" width="20">
-                            </a>
+                        <i class="fa-solid fa-xmark" style="color: #ffffff;"></i>
+                    </div>
+    
+                    <div id="css" class="d-flex align-items-center justify-content-center p-2">
+                        <i class="fa-solid fa-hashtag" style="color: #519aba;"></i>
+                        <div class="mx-2">
+                            education_and_certificates.css
+                        </div>
+                        <i class="fa-solid fa-xmark" style="color: #ffffff;"></i>
+                    </div>
+    
+                    <div id="py" class="d-flex align-items-center justify-content-center p-2">
+                        <i class="fa-brands fa-python" style="color: #519aba;"></i>
+                        <div class="mx-2">
+                            projects.py
+                        </div>
+                        <i class="fa-solid fa-xmark" style="color: #ffffff;"></i>
+                    </div>
+    
+                    <div id="js" class="d-flex align-items-center justify-content-center p-2">
+                        <i class="fa-brands fa-square-js" style="color: #cbcb41;"></i>
+                        <div class="mx-2">
+                            linguistic_skills_and_hobbies.js
+                        </div>
+                        <i class="fa-solid fa-xmark" style="color: #ffffff;"></i>
+                    </div>
+    
+                </div>
+                
+                <ol id="html-code" class="m-0 border-secondary border-bottom border-opacity-25" style="display: none;">
+                    <li><span class="ms-4 sub-sign">&lt;</span><span class="tag">ul</span>&nbsp;<span class="attr">id</span><span class="sign">=</span><span class="string">"professional_profile"</span><span class="sub-sign">&gt;</span></li>
+    
+                    <li><span class="sub-sign ms-4">{% for i in "iiii" %}&nbsp;{% endfor %}&lt;</span><span class="tag">li</span><span class="sub-sign">&gt;</span></li>
+                    <li><span class="innerHTML ms-4">{% for i in "iiiiiiii" %}&nbsp;{% endfor %}Full stack developer working with a lot of languages, frameworks, and technologies</span></li>
+                    <li><span class="innerHTML ms-4">{% for i in "iiiiiiii" %}&nbsp;{% endfor %}such as: Python, HTML, CSS, JavaScript, SQL, C, Django, React.JS, Git, Flask, Jinja, Bootstrap, Sass, Docker</span></li>
+                    <li><span class="sub-sign ms-4">{% for i in "iiii" %}&nbsp;{% endfor %}&lt;/</span><span class="tag">li</span><span class="sub-sign">&gt;</span></li>
+    
+                    <li><span class="sub-sign ms-4">{% for i in "iiii" %}&nbsp;{% endfor %}&lt;</span><span class="tag">li</span><span class="sub-sign">&gt;</span></li>
+                    <li><span class="innerHTML ms-4">{% for i in "iiiiiiii" %}&nbsp;{% endfor %}1 year of Python and JavaScript experience (9 months of Flask/Jinja +3 months of Django/React.JS)</span></li>
+                    <li><span class="sub-sign ms-4">{% for i in "iiii" %}&nbsp;{% endfor %}&lt;/</span><span class="tag">li</span><span class="sub-sign">&gt;</span></li>
+                    
+                    <li><span class="sub-sign ms-4">{% for i in "iiii" %}&nbsp;{% endfor %}&lt;</span><span class="tag">li</span><span class="sub-sign">&gt;</span></li>
+                    <li class="d-flex"><span class="innerHTML ms-4">{% for i in "iiiiiiii" %}&nbsp;{% endfor %}<span class="sub-sign">&lt;</span><span class="tag">a</span><span class="attr">&nbsp;href</span><span class="sign">=</span><span class="string">"</span><a href="https://certificates.cs50.io/2b7e2e2f-398a-4945-9944-f7ee59d0bc77.pdf" target="_blank" rel="noopener noreferrer">Link of Certificate</a><span class="string">"</span><span class="sub-sign">&gt;</span>Harvard Certified Professional in CS50x<span class="sub-sign">&lt;/</span><span class="tag">a</span><span class="sub-sign">&gt;</span></span></li>
+                    <li class="d-flex"><span class="sub-sign ms-4">{% for i in "iiii" %}&nbsp;{% endfor %}&lt;/</span><span class="tag">li</span><span class="sub-sign">&gt;</span></li>
+                    
+                    <li class="d-flex"><span class="ms-4 sub-sign">&lt;/</span><span class="tag">ul</span><span class="sub-sign">&gt;</span></li>
+                </ol>
+    
+                <ol id="css-code" class="m-0 border-secondary border-bottom border-opacity-25" style="display: none;">
+                    <li><span class="ms-4 selector">#education&nbsp;&lcub;</span>
+    
+                    <li><span class="ms-4 attr">{% for i in "iiii" %}&nbsp;{% endfor %}high-school</span>:<span class="string">&nbsp;Passed General Secondary Exams Scientific with 99.78%</span>;
+                    <li><span class="ms-4 attr">{% for i in "iiii" %}&nbsp;{% endfor %}university</span>:<span class="string">&nbsp;Bachelor's degree in <b><i>Computer Science</i></b> with 3.93 of 4.00 GPA from Faculy of </span>
+                    <li><span class="ms-4 string">{% for i in "iiii" %}&nbsp;{% endfor %}Computer Studies FCS(Arab Open University(AOU)) in 2025 in Saudi Arabia</span>;
+                    
+                    <li><span class="ms-4 selector">&lcub;</span>
+    
+    
+                    <li><span class="ms-4 selector">#certificates&nbsp;&lcub;</span>
+    
+                    <li><span class="ms-4 attr">{% for i in "iiii" %}&nbsp;{% endfor %}cs50x</span>:<span class="string">&nbsp;Harvard Certified Professional in CS50x</span>;
+                    <li><span class="ms-4 attr">{% for i in "iiii" %}&nbsp;{% endfor %}hour-of-code-2020</span>:<span class="string">&nbsp;Microsoft Certificate of Completion of the Hour of Code 2020</span>
+                    <li><span class="ms-4 string">{% for i in "iiii" %}&nbsp;{% endfor %}and for demonstrating creativity and problem solving skills</span>;
+    
+                    <li class="d-flex"><span class="ms-4 selector">&lcub;</span>
+                </ol>
+                
+                <ol id="py-code" class="m-0 border-secondary border-bottom border-opacity-25" style="display: none;">
+                    <li><span class="ms-4 reserve">import</span><span class="lib">&nbsp;urllib.request</span></li>
+                    <li></li>
+                    <li><span class="ms-4 tag">class</span><span class="lib">&nbsp;Project</span><span class="sign">:</span></li>
+                    <li><span class="ms-4 tag">{% for i in "iiii" %}&nbsp;{% endfor %}def</span><span class="func">&nbsp;__init__</span><span class="bracket">&lpar;<span class="variable">self<span class="sign">,&nbsp;</span>description<span class="sign">,&nbsp;</span>url</span>&rpar;</span><span class="sign">:</span></li>
+                    <li><span class="ms-4 variable">{% for i in "iiiiiiii" %}&nbsp;{% endfor %}self<span class="sign">.</span>description<span class="sign">&nbsp;=&nbsp;</span>description</span></li>
+                    <li><span class="ms-4 variable">{% for i in "iiiiiiii" %}&nbsp;{% endfor %}self<span class="sign">.</span>url<span class="sign">&nbsp;=&nbsp;</span><span class="lib">urllib</span><span class="sign">.</span><span class="lib">request</span><span class="sign">.</span><span class="func">urlopen</span><span class="bracket">&lpar;</span>url<span class="bracket">&rpar;</span></span></li>
+                    <li></li>
+                    <li><span class="ms-4 variable">projectBroom</span><span class="sign">&nbsp;=&nbsp;</span><span class="lib">Project</span><span class="bracket">&lpar;<span class="string">"A website that offeres device care services"<span class="sign">,&nbsp;</span></span></span></li>
+                    <li><span class="ms-4 string">{% for i in "ProjectBroom = Project(" %}&nbsp;{% endfor %}"<a href="https://mohammaddaleen.pythonanywhere.com" target="_blank" rel="noopener noreferrer">mohammaddaleen.pythonanywhere.com</a>"</span><span class="bracket">&rpar;&nbsp;</span></li>
+                    <li class="d-flex"></li>
+                    <li class="d-flex"><span class="ms-4 variable">projectSearch</span><span class="sign">&nbsp;=&nbsp;</span><span class="lib">Project</span><span class="bracket">&lpar;<span class="string">"Google-like user interface connected to google search engine"<span class="sign">,&nbsp;</span></span></span></li>
+                    <li class="d-flex"><span class="ms-4 string">{% for i in "projectSearch = Project(" %}&nbsp;{% endfor %}"<a href="https://github.com/MohammadDaleen/cs50w/tree/main/Project0Search" target="_blank" rel="noopener noreferrer">https://github.com/MohammadDaleen/cs50w/tree/main/Project0Search</a>"</span><span class="bracket">&rpar;&nbsp;</span></li>
+                    <li class="d-flex"></li>
+                    <li class="d-flex"><span class="ms-4 variable">projectWiki</span><span class="sign">&nbsp;=&nbsp;</span><span class="lib">Project</span><span class="bracket">&lpar;<span class="string">"Encyclopedia that functions just like Wikipedia (stores data as MarkDown language)"<span class="sign">,&nbsp;</span></span></span></li>
+                    <li class="d-flex"><span class="ms-4 string">{% for i in "projectWiki = Project(" %}&nbsp;{% endfor %}"<a href="https://github.com/MohammadDaleen/cs50w/tree/main/Project1Wiki" target="_blank" rel="noopener noreferrer">https://github.com/MohammadDaleen/cs50w/tree/main/Project1Wiki</a>"</span><span class="bracket">&rpar;&nbsp;</span></li>
+                    <li class="d-flex"></li>
+                    <li class="d-flex"><span class="ms-4 variable">projectCommerce</span><span class="sign">&nbsp;=&nbsp;</span><span class="lib">Project</span><span class="bracket">&lpar;<span class="string">"Ebay-like auctions website that allows users to bid on listed stuff"<span class="sign">,&nbsp;</span></span></span></li>
+                    <li class="d-flex"><span class="ms-4 string">{% for i in "projectCommerce = Project(" %}&nbsp;{% endfor %}"<a href="https://github.com/MohammadDaleen/cs50w/tree/main/Project2Commerce" target="_blank" rel="noopener noreferrer">https://github.com/MohammadDaleen/cs50w/tree/main/Project2Commerce</a>"</span><span class="bracket">&rpar;&nbsp;</span></li>
+                    <li class="d-flex"></li>
+                    <li class="d-flex"><span class="ms-4 variable">projectMail</span><span class="sign">&nbsp;=&nbsp;</span><span class="lib">Project</span><span class="bracket">&lpar;<span class="string">"Gmail-like mail webapp that allows users to send and recive emails (sandbox)"<span class="sign">,&nbsp;</span></span></span></li>
+                    <li class="d-flex"><span class="ms-4 string">{% for i in "projectMail = Project(" %}&nbsp;{% endfor %}"<a href="https://github.com/MohammadDaleen/cs50w/tree/main/Project3Mail" target="_blank" rel="noopener noreferrer">https://github.com/MohammadDaleen/cs50w/tree/main/Project3Mail</a>"</span><span class="bracket">&rpar;&nbsp;</span></li>
+                    <li class="d-flex"></li>
+                    <li class="d-flex"><span class="ms-4 variable">projectNetwork</span><span class="sign">&nbsp;=&nbsp;</span><span class="lib">Project</span><span class="bracket">&lpar;<span class="string">"Twitter-like social media webapp that allows users to upload text-based posts "<span class="sign">/&nbsp;</span></span></span></li>
+                    <li class="d-flex"><span class="ms-4 string">{% for i in "projectNetwork = Project(" %}&nbsp;{% endfor %}"and read other's posts"</span><span class="sign">,&nbsp;</span></li>
+                    <li class="d-flex"><span class="ms-4 string">{% for i in "projectNetwork = Project(" %}&nbsp;{% endfor %}"<a href="https://github.com/MohammadDaleen/cs50w/tree/main/Project4Network" target="_blank" rel="noopener noreferrer">https://github.com/MohammadDaleen/cs50w/tree/main/Project4Network</a>"</span><span class="bracket">&rpar;&nbsp;</span></li>
+    
+                </ol>
+    
+                <ol id="js-code" class="m-0 border-secondary border-bottom border-opacity-25" style="display: none;">
+                    <li><span class="ms-4 sign">function</span><span class="variable">&nbsp;linguistic_skills</span><span class="bracket">&lpar;&rpar; &lbrace;</span></li>
+                    
+                    <li><span class="ms-4 tag">{% for i in "iiii" %}&nbsp;{% endfor %}const</span><span class="variable">&nbsp;arabic</span><span class="sign">&nbsp;=&nbsp;</span><span class="string">'Native'</span><span class="sign">;</span></li>
+                    <li><span class="ms-4 tag">{% for i in "iiii" %}&nbsp;{% endfor %}let</span><span class="variable">&nbsp;english</span><span class="sign">&nbsp;=&nbsp;</span><span class="string">'Very Good'</span><span class="sign">;</span></li>
+                    <li><span class="ms-4 tag">{% for i in "iiii" %}&nbsp;{% endfor %}let</span><span class="variable">&nbsp;turkish</span><span class="sign">&nbsp;=&nbsp;</span><span class="string">'Beginner'</span><span class="sign">;</span></li>
+    
+                    <li><span class="ms-4"><span class="bracket">&rbrace;</span></li>
+    
+                    <li></li>
+    
+                    <li><span class="ms-4 sign">function</span><span class="variable">&nbsp;hobbies</span><span class="bracket">&lpar;&rpar; &lbrace;</span></li>
+                    
+                    <li><span class="ms-4 tag">{% for i in "iiii" %}&nbsp;{% endfor %}let</span><span class="variable">&nbsp;hobbies</span><span class="sign">&nbsp;=&nbsp;</span><span class="string"><span class="bracket">&lbrack;</span>'Making new stuff (Coding)'<span class="sign">,&nbsp;</span>'Volleyball'<span class="bracket">&rbrack;</span></span><span class="sign">;</span></li>
+    
+                    <li><span class="ms-4"><span class="bracket">&rbrace;</span></li>
+                </ol>
+    
+                <footer class="mt-auto">
+                    <div class="container-lg">
+                        <div class="align-items-center d-flex justify-content-center p-5 row text-light">
+                            <div class="col-12 col-md-12 col-lg-4 col-xxl-4 d-flex justify-content-center pb-3 pb-lg-0 px-0">
+                                <span class="my-auto text-center">© 2022 Broom Inc. All rights reserved.</span>
+                            </div>
+                            <div class="col-2 col-md-1 col-lg-1 col-xxl-1 d-flex justify-content-center pb-0 px-0">
+                                <a class="btn btn-light p-2 rounded-circle shadow" href="https://wa.me/966534785904" rel="noopener noreferrer" role="button" target="_blank">
+                                    <img alt="Whatsapp Icon" class="align-item-center d-flex justify-content-center" height="auto" src="/static/ico/whatsapp.ico" width="20">
+                                </a>
+                            </div>
+                            <div class="col-2 col-md-1 col-lg-1 col-xxl-1 d-flex justify-content-center pb-0 px-0">
+                                <a class="btn btn-light p-2 rounded-circle shadow" href="mailto:broom.meknasa@gmail.com" role="button">
+                                    <img alt="Gmail Icon" class="d-flex align-item-center justify-content-center" height="auto" src="/static/ico/gmail.ico" width="20">
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </footer>
-
+                </footer>
+    
+            </div>
         </div>
+        
     </div>
 {% endblock %}

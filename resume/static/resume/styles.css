@@ -21,14 +21,18 @@ body {
 }
 
 #profile {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
 }
 
 /* #main {
     background: #1f1f1f;
     height: 100%;
 } */
+
+#html-code, #py-code, #css-code, #js-code{
+    background: #1f1f1f;
+}
 
 #py-code {
     height: 450px;
