@@ -34,11 +34,11 @@ body {
     background: #1f1f1f;
 }
 
+/*
 #py-code {
-    height: 450px;
     overflow: scroll;
     overflow-x: hidden;
-}
+} */
 
 /* py-code ScrollBar */
 #py-code::-webkit-scrollbar {
