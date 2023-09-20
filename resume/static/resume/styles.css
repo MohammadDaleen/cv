@@ -40,17 +40,25 @@ body {
     overflow-x: hidden;
 } */
 
-/* py-code ScrollBar */
-#py-code::-webkit-scrollbar {
+#navbar::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* foo-code ScrollBar */
+#html-code::-webkit-scrollbar, #css-code::-webkit-scrollbar, #py-code::-webkit-scrollbar, #js-code::-webkit-scrollbar {
     width: 20px;
 }
 
-#py-code::-webkit-scrollbar-track {
+#html-code::-webkit-scrollbar-track, #css-code::-webkit-scrollbar-track, #py-code::-webkit-scrollbar-track, #js-code::-webkit-scrollbar-track {
     background-color: #1f1f1f;
     border: 1px solid #080b0e;
 }
 
-#py-code::-webkit-scrollbar-thumb {
+#html-code::-webkit-scrollbar-corner, #css-code::-webkit-scrollbar-corner, #py-code::-webkit-scrollbar-corner, #js-code::-webkit-scrollbar-corner { 
+    background:  #1f1f1f; 
+}
+
+#html-code::-webkit-scrollbar-thumb, #css-code::-webkit-scrollbar-thumb, #py-code::-webkit-scrollbar-thumb, #js-code::-webkit-scrollbar-thumb{
     background-color: #2f3133;
 }
 
