@@ -41,7 +41,19 @@ body {
 } */
 
 #navbar::-webkit-scrollbar {
-    width: 10px;
+    height: 3px;
+}
+
+#navbar::-webkit-scrollbar-track {
+    background-color: #1f1f1f;
+}
+
+#navbar::-webkit-scrollbar-corner { 
+    background:  #1f1f1f; 
+}
+
+#navbar::-webkit-scrollbar-thumb {
+    background-color: #2f3133;
 }
 
 /* foo-code ScrollBar */
