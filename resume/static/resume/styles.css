@@ -59,6 +59,7 @@ body {
 /* foo-code ScrollBar */
 #html-code::-webkit-scrollbar, #css-code::-webkit-scrollbar, #py-code::-webkit-scrollbar, #js-code::-webkit-scrollbar {
     width: 20px;
+    height: 20px;
 }
 
 #html-code::-webkit-scrollbar-track, #css-code::-webkit-scrollbar-track, #py-code::-webkit-scrollbar-track, #js-code::-webkit-scrollbar-track {
